@@ -16,10 +16,10 @@ def index():
     fav_pizza =["Pepperoni", "Cheese", "Mashroom", 30]
     
     return render_template("index.html",
-        first_name = firstname,
-        stuff = bold,
-        stuffs = striptag,
-        favorite_pizza = fav_pizza)
+    first_name = firstname,
+    stuff = bold,
+    stuffs = striptag,
+    favorite_pizza = fav_pizza,)
 
 
 @app.route('/users')

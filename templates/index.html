@@ -1,18 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
 <h1>hello world</h1>
-<p> this is my first webpage</p>
-<p>My name is {{first_name|capitalize}}</p>
-<p>{{stuff|safe}}</p>
-<p>{{stuff|striptags}}</p>
-<p>{{stuffs|striptags}}</p>
+    <p> this is my first webpage</p>
+    <p>My name is {{first_name|capitalize}}</p>
+    <p>{{stuff|safe}}</p>
+    <p>{{stuff|striptags}}</p>
+    <p>{{stuffs|striptags}}</p>
 
-{{favorite_pizza}}
-<h2>Favorite Pizza:</h2>
-    {% for pizza in favorite_pizza%}
-        {% if pizza == 30 %}
-            {{pizza + 1234}} </br>
-        {%else%}
-            {{pizza}}<br/>
-        {%endif%}
-    {%endfor%}
+    <p> this is my first webpage</p>
+    <p>My name is {{first_name|capitalize}}</p>
+    <p>{{stuff|safe}}</p>
+    <p>{{stuff|striptags}}</p>
+    <p>{{stuffs|striptags}}</p>
 
-</br></br>
+    <p> this is my first webpage</p>
+    <p>My name is {{first_name|capitalize}}</p>
+    <p>{{stuff|safe}}</p>
+    <p>{{stuff|striptags}}</p>
+    <p>{{stuffs|striptags}}</p>
+
+    <p> this is my first webpage</p>
+    <p>My name is {{first_name|capitalize}}</p>
+    <p>{{stuff|safe}}</p>
+    <p>{{stuff|striptags}}</p>
+    <p>{{stuffs|striptags}}</p>
+
+    <p> this is my first webpage</p>
+    <p>My name is {{first_name|capitalize}}</p>
+    <p>{{stuff|safe}}</p>
+    <p>{{stuff|striptags}}</p>
+    <p>{{stuffs|striptags}}</p>
+
+    <p> this is my first webpage</p>
+    <p>My name is {{first_name|capitalize}}</p>
+    <p>{{stuff|safe}}</p>
+    <p>{{stuff|striptags}}</p>
+    <p>{{stuffs|striptags}}</p>
+
+    {{favorite_pizza}}
+    <h2>Favorite Pizza:</h2>
+        {% for pizza in favorite_pizza%}
+            {% if pizza == 30 %}
+                {{pizza + 1234}} </br>
+            {%else%}
+                {{pizza}}<br/>
+            {%endif%}
+        {%endfor%}
+
+{% endblock %}
